@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite xmlns="funface" host="10.48.18.52" port="3000" scheme="http">
+    <test name="Default Device Test, for Chengdu">
+        <method>GET</method>
+        <path>device</path>
+        <result>status</result>
+        <expect>200</expect>
+    </test>
+    <test name="For Beijing">
+        <path>device/beijing</path>
+        <method>GET</method>
+        <result>status</result>
+        <expect>200</expect>
+    </test>
+</suite>

@@ -14,6 +14,10 @@ public class HttpFactory {
 
     OkHttpClient client = new OkHttpClient();
 
+    private Request.Builder builder = new Request.Builder();
+
+    HttpFactory() {
+    }
 
     String run(String url) throws IOException {
         Request request = new Request.Builder()
